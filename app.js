@@ -37,9 +37,9 @@ let quotes = {
 };
 
 document.querySelector("button").addEventListener("click", () => {
-  let authors = Object.keys(quotes);
-  let author = authors[Math.floor(Math.random() * authors.length)];
-  let quote = quotes[author];
+  let authors = Object.keys(quotes),
+    author = authors[Math.floor(Math.random() * authors.length)],
+    quote = quotes[author];
   document.querySelector("#quote").textContent = quote;
   document.querySelector("#author").textContent = author;
 });
